@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AZER - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @keyframes rotate {
+      from {
+        filter: drop-shadow(3px 5px 8px green);
+        transform: rotate(0deg);
+      }
+      to {
+        filter: drop-shadow(3px 5px 8px red);
+        transform: rotate(360deg);
+      }
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: black;
+      color: white;
+    }
+
+    header img.logo {
+      margin-left: 43%;
+    }
+
+    .personal {
+      max-width: 100%;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      margin: 30px 30px;
+      border-radius: 12px 12px 12px 12px;
+    }
+
+    .personal h2 {
+      margin-left: 30px ;
+      color: white;
+    }
+
+    h2 {
+      color: Orange;
+      text-shadow: 5px 5px 5px black;
+    }
+
+    .Pm {
+      margin-top: 8px;
+      margin-left: 50px;
+      margin-bottom: 2px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 1px solid white;
+      
+    }
+
+
+
+    #contact p a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .content-block {
+      margin: 20px;
+      padding: 1px;
+      background-color: black;
+      border-radius: 12px;
+    }
+
+    .video-container {
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    video {
+      border-radius: 12px;
+      border: 2px solid black;
+      width: 300px;
+      display: block;
+    }
+
+    video:hover {
+      filter: drop-shadow(3px 5px 8px aqua);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    .image-container {
+      border-radius: 10px;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 400px;
+    }
+
+   .content-block div {
+     width: 70%;
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 10px;
+      background-color: ;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="img/logo.png" alt="azer" />
+  </header>
+
+  <ul>
+    
+       <li >
+         <a class="active" href="index.html">Home</a>
+    </li>
+    <li>
+    <a class="active" href="activity.html">Activity</a>
+    </li>
+  <li>
+    <a class="active" href="contact.html">Contact</a>
+  </li>
+    <li>
+    <a class="active" href="about.html">About</a>
+  </li>
+</ul>
+
+  <br />
+
+  <div class="personal">
+    <img class="Pm" src="img/P.jpg" width="20" height="20" />
+    <h2>Jerimark Gersaniva</h2>
+  </div>
+
+  <br />
+
+  <div id="about" class="content-block">
+    <div>
+      <h2>About Me</h2>
+      <p><b>Sex: </b>Male</p>
+      <p><b>Age: </b>21</p>
+      <p><b>Place of Birth: </b>Taytay</p>
+      <p><b>Nationality: </b>Filipino</p>
+      <p><b>Religion: </b>Roman Catholic</p>
+      <p><b>Civil Status: </b>Single</p>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <div>
+      <h2>Career Objective</h2>
+      <p>
+        Being a novice web developer with minimal knowledge and experience, my career goal is to obtain an entry-level job in a dynamic and challenging work environment to acquire hands-on experience in web development and be able to contribute to the organization's success. I wish to learn new skills, work with experienced professionals, and undertake new challenges to enhance my knowledge and expertise in web development.
+      </p>
+    </div>
+  </div>
+
+  <div id="projects" class="video-container">
+    <h2>Video</h2>
+    <p></p>
+    <video id="myVideo" controls playsinline>
+      <source src="vid/hc.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <script>
+      const video = document.getElementById('myVideo');
+
+      function handleFullscreenChange() {
+        if (
+          document.fullscreenElement === video ||
+          document.webkitFullscreenElement === video ||
+          document.msFullscreenElement === video
+        ) {
+          video.play();
+        }
+      }
+
+      document.addEventListener('fullscreenchange', handleFullscreenChange);
+      document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+      document.addEventListener('msfullscreenchange', handleFullscreenChange);
+    </script>
+  </div>
+
+  <div id="contact" class="content-block">
+    <div>
+      <h2>Contact</h2>
+      <p><b>Email: </b>baculanlan.jerimark@gmail.com</p>
+
+    </div>
+  </div>
+
+  <footer class="account">
+    <a href="https://www.facebook.com/azerx111">
+      <img class="facebook" src="img/facebook.png" alt="facebook" />
+    </a>
+    <a href="https://www.instagram.com/azerx111">
+      <img class="instagram" src="img/instagram.png" alt="instagram" />
+    </a>
+    <a href="https://www.tiktok.com/@azerx111">
+      <img class="tiktok" src="img/tiktok.png" alt="tiktok" />
+    </a>
+  </footer>
+</body>
+</html>

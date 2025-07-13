@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Video Play</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+    }
+    video {
+      width: 100%;
+      max-height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="myVideo" controls playsinline>
+    <source src="vid/hc.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    const video = document.getElementById('myVideo');
+
+    // When video enters fullscreen, play it
+    function handleFullscreenChange() {
+      if (
+        document.fullscreenElement === video ||
+        document.webkitFullscreenElement === video || // Safari
+        document.msFullscreenElement === video       // IE/Edge
+      ) {
+        video.play();
+      }
+    }
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('msfullscreenchange', handleFullscreenChange);
+  </script>
+
+</body>
+</html>

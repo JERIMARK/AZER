@@ -1,0 +1,13 @@
+*{
+		background-color: black;
+		color: white;
+		text-align: center;
+      }
+      
+      h1.topic{
+      	border-bottom: 2px solid green;
+          border-top: 2px solid green;
+       }
+      p.hindu{
+      	border: 2px solid green;
+      }

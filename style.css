@@ -1,0 +1,133 @@
+body{
+    font-family: 'Arial', sans-serif;
+    filter: saturate(200%);
+    background-color: black; 
+    color: white;
+    margin:10;
+    
+}
+header{
+  background-color: #eaacac0b;
+  margin: 0;
+  
+}
+img.logo{
+  animation: rotate 10s linear infinite;
+  filter: drop-shadow(3px 5px 8px blue);
+  height: 50px;
+  width: 50px;
+}
+
+ul {
+    filter: opacity(90%);
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: black;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+li {
+    
+    float: left;
+}
+li a {
+  margin-top: 4px;
+   text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    font-size: 15px;
+    border-radius: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: black;
+    color: white;
+    filter: drop-shadow(3px 5px 8px blue);
+}
+
+.active:hover {
+    color: black;
+    background-color: white;
+}
+.active:hover{
+    filter: drop-shadow(0px 2px 0px blue);
+}
+
+
+.act{
+  
+  margin-bottom: 8px;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid crimson;
+  text-decoration: none;
+  font-size: 20px;
+  width: auto;
+  text-transform: uppercase;
+  
+}
+
+.act:hover{
+  filter: drop-shadow(3px 5px 8px blue);
+  text-shadow: 3px 5px 8px green;
+  
+}
+
+.prelim{
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: black;
+  border: 2px solid white;
+}
+.prelim:hover{
+filter: drop-shadow(5px 5px 10px crimson);
+  
+}
+footer{
+  
+  border-radius: 12px 12px 0 0;
+  border-top: 2px solid white;
+  padding: 1px;
+  background-color: black;
+  margin: 3rem 0 0 0;
+}
+footer img{
+  margin: 10px;
+  height:30px;
+}
+ footer img.facebook:hover{
+   border: 1px solid white;
+   border-radius: 12px;
+   filter: drop-shadow( 3px 5px 8px blue);
+   opacity: 85%;
+   height:35px;
+ }
+ footer img.instagram:hover{
+   border: 1px solid white;
+   border-radius: 12px;
+   filter: drop-shadow( 3px 5px 8px pink);
+   opacity: 85%;
+   height:35px;
+ }
+footer img.tiktok:hover{
+   border: 1px solid white;
+   border-radius: 12px;
+   filter: drop-shadow( 3px 5px 8px red);
+   opacity: 85%;
+   height:35px;
+ }
