@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AZER - Contact</title>
+  
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <style>
     @keyframes rotate {
@@ -150,6 +157,17 @@
     <img class="Pm" src="img/P.jpg" width="20" height="20" />
     <h2>Jerimark Gersaniva</h2>
   </div>
+  <div class="post-ratings-container">
+  <div class="post-rating" data-type="like">
+    <span class="post-rating-button material-icons">thumb_up</span>
+    <span class="post-rating-count">0</span>
+  </div>
+
+  <div class="post-rating" data-type="dislike">
+    <span class="post-rating-button material-icons">thumb_down</span>
+    <span class="post-rating-count">0</span>
+  </div>
+</div>
 
   <br />
 
@@ -181,23 +199,7 @@
       <source src="vid/hc.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <script>
-      const video = document.getElementById('myVideo');
 
-      function handleFullscreenChange() {
-        if (
-          document.fullscreenElement === video ||
-          document.webkitFullscreenElement === video ||
-          document.msFullscreenElement === video
-        ) {
-          video.play();
-        }
-      }
-
-      document.addEventListener('fullscreenchange', handleFullscreenChange);
-      document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
-      document.addEventListener('msfullscreenchange', handleFullscreenChange);
-    </script>
   </div>
 
   <div id="contact" class="content-block">
@@ -222,5 +224,7 @@
       <img class="tiktok" src="img/tiktok.png" alt="tiktok" />
     </a>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
