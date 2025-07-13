@@ -106,6 +106,7 @@ footer{
   background-color: black;
   margin: 3rem 0 0 0;
 }
+
 footer img{
   margin: 10px;
   height:30px;
@@ -131,3 +132,42 @@ footer img.tiktok:hover{
    opacity: 85%;
    height:35px;
  }
+ 
+ .post-ratings-container {
+  display: flex;
+  margin-left: 40px;
+  gap: 30px;
+  background: black;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-rating {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  border-bottom: 3px solid white;
+}
+
+.post-rating-button {
+  color: #555;
+  font-size: 40px;
+  transition: color 0.2s;
+
+}
+
+.post-rating-count {
+  margin-left: 8px;
+  font-size: 15px;
+}
+
+.post-rating.active .post-rating-button {
+  color: blue;
+}
+
+.post-rating[data-type="dislike"].active .post-rating-button {
+  color: red;
+}
