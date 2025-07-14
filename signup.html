@@ -1,0 +1,119 @@
+<!Doctype html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+     Sign up
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+     filter:saturate(100%);
+     text-align: center;
+     background-color: black;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size:cover;
+     
+    }
+    h2{
+      border-bottom: 2px solid red;
+    }
+    iframe{
+      width: 280px;
+      background-color: green;
+      border-radius: 12px;
+      margin-bottom:10px;
+    }
+    .img{
+      margin: 20px;
+      animation: rotate 10s linear infinite;
+      height: 150px;
+      width: 150px;
+      position:relative;
+      
+    }
+    .img:hover{
+      filter: drop-shadow(3px 5px 8px red);
+    }
+    @keyframes rotate {
+    from {
+      filter: drop-shadow(3px 5px 8px green);
+      transform: rotate(0deg);
+    }
+    to {
+      filter: drop-shadow(3px 5px 8px red);
+      transform: rotate(360deg);
+    }
+  }
+
+
+    
+
+
+  </style>
+</head>
+<body>
+  <header>
+     <img class="logo" src="img/logo.png" alt="azer"/>
+  </header>
+  <ul>
+    
+       <li >
+         <a class="active" href="index.html">Home</a>
+    </li>
+    <li>
+    <a class="active" href="index.html">Activity</a>
+    </li>
+  <li>
+    <a class="active" href="index.html">Contact</a>
+  </li>
+    <li>
+  <a class="active" href="index.html">About</a>
+  </li>
+</ul>
+</ul>
+  
+
+
+<div class="signup-container">
+
+   <form class="create">
+       <h1 class="intro">Create Account</h1>
+        <br>
+          <input class="input" type="text" id="username" placeholder="Username" required/>
+          <br>
+          <input class="input" type="email" id="email" placeholder="Email" required/>
+          <br>
+          <input class="input" type="password" id="password" placeholder="Password" required/>
+          <br>
+          <input class="submit" type="submit" id="submit"/>
+          <br>
+          <img  class="luffy" src="img/luffy.png"/>
+
+   </form>
+   
+   <p class="here" >Login Your Account
+      <a href="index.html">Here</a>
+   </p>
+   
+
+   
+</div>
+  <footer class="account">
+    
+   <a href="https://www.facebook.com/azerx111"><img class="facebook" src="img/facebook.png" alt="facebook"/></a>
+   
+   <a href="https://www.instagram.com/azerx111"><img class="instagram" src="img/instagram.png" alt="instagram"/></a>
+   
+  <a href="https://www.tiktok.com/@azerx111"><img class="tiktok" src="img/tiktok.png" alt="tiktok"/></a>
+
+  </footer>
+  
+     <script type="module" src="create-account.js" defer></script>
+
+  
+</body>
+  
+</html>
