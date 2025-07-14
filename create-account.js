@@ -36,7 +36,7 @@ submit.addEventListener("click", async function (event) {
     });
 
     alert("Account created!");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 
   } catch (error) {
     alert("Invalid: " + "use @ in "+email +" the Password more than 6 numbers "+ password);
