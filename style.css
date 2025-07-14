@@ -171,3 +171,89 @@ footer img.tiktok:hover{
 .post-rating[data-type="dislike"].active .post-rating-button {
   color: red;
 }
+
+.signup-container{
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  
+}
+
+.luffy{
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+.create{
+  padding: 20px;
+  margin: 10px ;
+  
+}
+.input{
+  margin: 5px;
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-family: Times New Roman;
+  font-size: 18px;
+  border:1px solid crimson;
+}
+.input:hover{
+  border: 2px solid crimson;
+  filter: drop-shadow(3px 5px 5px crimson);
+}
+
+.input2{
+  margin: 5px;
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-family: Times New Roman;
+  font-size: 18px;
+  border:1px solid aqua;
+}
+.input2:hover{
+  border: 2px solid aqua;
+  filter: drop-shadow(3px 5px 5px aqua);
+}
+.submit{
+  color: blackp;
+  border: 1px solid crimson;
+  background-color: white;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Times New Roman;
+}
+.submit:hover{
+  background-color: black;
+  color: white;
+}
+.submit2{
+  color: blackp;
+  border: 1px solid aqua;
+  background-color: white;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Times New Roman;
+}
+.submit2:hover{
+  background-color: black;
+  color: white;
+}
+
+.here a{
+  text-decoration: none;
+  color: blue;
+}
