@@ -39,6 +39,6 @@ submit.addEventListener("click", async function (event) {
     window.location.href = "index.html";
 
   } catch (error) {
-    alert("Invalid: " + "use @ in "+email +" the Password more than 6 numbers "+ password);
+    alert("Invalid Input Please Try Again 🥺");
   }
 });
