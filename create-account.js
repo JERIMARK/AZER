@@ -40,5 +40,8 @@ submit.addEventListener("click", async function (event) {
 
   } catch (error) {
     alert("Invalid Input Please Try Again 🥺");
+    alert("username: example");
+    alert("email: example@gmail.com");
+    alert("password: 123456");
   }
 });
