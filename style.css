@@ -126,7 +126,7 @@ footer img{
    height:35px;
  }
 footer img.tiktok:hover{
-   border: 1px solid white;
+   border: 1px solid rgba(82, 32, 32, 0.274);
    border-radius: 12px;
    filter: drop-shadow( 3px 5px 8px red);
    opacity: 85%;
@@ -135,12 +135,12 @@ footer img.tiktok:hover{
  
  .post-ratings-container {
   display: flex;
-  margin-left: 40px;
+  margin-left: 20px;
   gap: 30px;
-  background: black;
+  background: #2d3235;
   padding: 20px 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
 }
 
 .post-rating {
@@ -149,19 +149,19 @@ footer img.tiktok:hover{
   cursor: pointer;
   font-size: 20px;
   user-select: none;
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid rgba(179, 46, 46, 0.5);
 }
 
 .post-rating-button {
   color: #555;
-  font-size: 40px;
+  font-size: 30px;
   transition: color 0.2s;
 
 }
 
 .post-rating-count {
   margin-left: 8px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .post-rating.active .post-rating-button {
